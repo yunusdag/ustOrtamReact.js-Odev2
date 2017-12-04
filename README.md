@@ -23,7 +23,7 @@
 
 **Step-6)** Open the browser, then go to url:
 
-    localhost:3000
+    localhost:8080
 
    After installing "Node.js" and "git" you can watch the videos to bootstrap the application
    https://www.dropbox.com/sh/y7q60nv1ry96kjf/AADZsInvyuBVoPD9tOEzm47Ba?dl=0
