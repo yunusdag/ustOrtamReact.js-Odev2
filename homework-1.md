@@ -4,7 +4,7 @@
   to do list application. When "Add-Task" button is pressed with an input, the written input-text
   should be added to our list items.
   
-  ##Requirements: 
+  ## Requirements: 
   
   - Style of this application will "NOT" be considered for homework-1. (you can use default styles)
   
@@ -13,7 +13,7 @@
   - When input field is empty 'add-task' button should 'NOT' add any item to the list.
   
   
-  ##Hints: 
+  ## Hints: 
   
     Just look the comments that i've added to our code-base and when you follow the hints your homework will be done :)
     You don't need to copy paste any code from anywhere, just follow the hints and remember the flow that we make on 
