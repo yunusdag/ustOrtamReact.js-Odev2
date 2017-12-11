@@ -1,12 +1,28 @@
 import React, { Component } from "react";
 
+export const formAPI = {
+  handleClick: function() {
+      if (this.props.currentInput.trim() !== "") {
+        this.props.dispatch({
+          type: "ADD_TODO_ITEM",
+          data: this.props.currentInput
+        })
+      }
+      this.props.dispatch({
+        type: "ADD_CURRENT_INPUT",
+        data: ""
+      })
+  }
+}
+
+
 class FormContainer extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    // you should start your dispatcher with currentInput as data... (hint)
+    console.log(this);
 
     return (
       <form className="form-container" onSubmit={e => e.preventDefault()}>
@@ -26,9 +42,7 @@ class FormContainer extends Component {
         <div>
           <button
             className="add-task-btn"
-            onClick={() => {
-              // You will trigger your reducer with an action to add todo task here...
-            }}
+            onClick={formAPI.handleClick.bind(this)}
           >
             {"Add Task"}
           </button>

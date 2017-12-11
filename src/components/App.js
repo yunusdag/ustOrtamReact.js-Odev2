@@ -26,7 +26,9 @@ class App extends Component {
           currentInput={this.state.main.get("currentInput", "")}
           dispatch={this.store.dispatch}
         />
-        <ListContainer />
+        <ListContainer
+          todoItems={this.state.main.get("todoItems", I.List())}
+        />
       </div>
     );
   }
