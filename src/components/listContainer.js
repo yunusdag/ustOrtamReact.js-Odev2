@@ -16,6 +16,19 @@ class ListContainer extends Component {
             return (
               <div key={idx} className="each-todo">
                 {each}
+                {
+                  /*
+                    you should have a delete button for each todo item like that,
+                    and delete button should dispatch delete functionality for reducer
+                    (Hint: you can look at what we did for add-task button)
+                    (Hint: do not forget to bring dispatch method from "app.js" like we did for form)
+                   */
+                  <button
+                    onClick={() => {}}
+                    className="delete-icon"
+                  >{"X"}
+                  </button>
+                }
               </div>
             )
           })
