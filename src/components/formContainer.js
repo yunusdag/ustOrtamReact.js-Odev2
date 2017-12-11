@@ -22,8 +22,6 @@ class FormContainer extends Component {
   }
 
   render() {
-    console.log(this);
-
     return (
       <form className="form-container" onSubmit={e => e.preventDefault()}>
       <div>
