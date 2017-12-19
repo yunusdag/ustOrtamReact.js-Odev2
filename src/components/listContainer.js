@@ -24,7 +24,12 @@ class ListContainer extends Component {
                     (Hint: do not forget to bring dispatch method from "app.js" like we did for form)
                    */
                   <button
-                    onClick={() => {}}
+                    onClick={e => {
+                      this.props.dispatch({
+                        type: "DELETE_TODO_TEST_ITEM",
+                        data: idx
+                      })
+                    }}
                     className="delete-icon"
                   >{"X"}
                   </button>

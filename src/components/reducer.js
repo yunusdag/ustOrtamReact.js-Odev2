@@ -9,6 +9,9 @@ function reducer(state = I.Map(), action) {
 
       return state.set("todoItems", currentItems.push(action.data));
     case "DELETE_TODO_TEST_ITEM":
+      const currentItemsList = state.get("todoItems", I.List());
+
+      return state.set("todoItems", currentItemsList.delete(action.data));
       /*
       you should do delete operation here. Do not forget to change data structure for to-do items,
       you might have array of objects for to-do items, like that:

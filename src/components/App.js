@@ -28,6 +28,7 @@ class App extends Component {
         />
         <ListContainer
           todoItems={this.state.main.get("todoItems", I.List())}
+          dispatch={this.store.dispatch}
         />
       </div>
     );
